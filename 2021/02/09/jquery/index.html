@@ -1,0 +1,535 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;dark&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/6e013e7bd49724a94a1b4b3a494990db.jpeg">
+  <link rel="icon" type="image/png" href="/img/6e013e7bd49724a94a1b4b3a494990db.jpeg">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="新手报到">
+  <meta name="author" content="JonJon">
+  <meta name="keywords" content="前端程序员">
+  <title>YXD8090</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"yxd8090.github.io","root":"/","version":"1.8.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>YXD8090</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/d260c015b13896a686ad210edc635fc8.jpeg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-02-09 21:03" pubdate>
+        2021年2月9日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      3.4k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      39
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none"></h1>
+            
+            <div class="markdown-body">
+              <p>第一天<br>一、jQuery介绍</p>
+<p>JavaScript库<br>javaScript库：指的就是library（仓库），一个封装好的特定的集合（方法和函数）。在库中封装好了一系列函数和方法。<br>常见的javaScript库：jQuery，Prototype，等等</p>
+<p>JQuery的概念<br>JQuery是一个快速，简洁的javaScript库，其设计的宗旨就是“weite Less ， Do More”（写更少的代码，做更多的事）。</p>
+<p>jQuery的下载<br>Query的官网地址： <a target="_blank" rel="noopener" href="https://jquery.com/%EF%BC%8C%E5%AE%98%E7%BD%91%E5%8D%B3%E5%8F%AF%E4%B8%8B%E8%BD%BD%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC%E3%80%82">https://jquery.com/，官网即可下载最新版本。</a><br>各个版本的下载：<a target="_blank" rel="noopener" href="https://code.jquery.com/">https://code.jquery.com/</a></p>
+<p>版本介绍：<br>1x ：兼容 IE 678 等低版本浏览器， 官网不再更新<br>2x ：不兼容 IE 678 等低版本浏览器， 官网不再更新<br>3x ：不兼容 IE 678 等低版本浏览器， 是官方主要更新维护的版本</p>
+<p>二、JQuery使用</p>
+<p>Jquery的入口函数<br>jQuery中常见的两种入口函数：<br>第一种<br>$(document).ready(function(){<br>DOM加载完成的入口<br>})<br>第二种<br>$(function(){<br>DOM加载完成的入口<br>})</p>
+<p>总结：<br>1.当DOM结构渲染完毕即可执行内部代码，相当于js中的DOMContentLoaded。<br>2.建议使用第二种方法更简洁方便。</p>
+<p>JQuery中的顶级对象$</p>
+<p>在JQuery中$是jQuery的别称，使用时$可以用jQuery代替，但一般为了方便通常就用$符号。<br>$时jQuery中的顶级对象相当于js中的window。$是将原生元素进行包装就成了jQuery对象，可以调用jQuery的方法。</p>
+<p>jQuery对象和DOM对象</p>
+<p>使用jQuery方法获取的元素就是jQuery对象，用原生的DOM方法获取的元素就是原生对象。两者是不一样的，jQuery对象本质上是对DOM对象进行包装后的对象（以伪数组的形式储存）<br>注意：只有jQuery对象才能使用jQuery方法，不能使用DOM原生方法。而DOM元素只能使用原生方法不能使用jQuery方法。<br>在jQuery中基本都是方法所以要加（）</p>
+<p>jQuery对象和DOM对象的转换</p>
+<p>jQuery对象转换成DOM对象<br>第一种<br>jQuery获取的元素是以伪数组的形式储存的，所以可以通过索引的方式获取DOM元素<br>let box = $(‘div’)[0]<br>第二种<br>通过jQuery的get(索引值)方法获取<br>let box = $(‘div’).get(0)</p>
+<p>DOM元素转换成jQuery对象<br>let box = document.querySelector(‘div’);<br>使用$符号对原生对象进行包装即可<br>let JQbox = $(box);</p>
+<p>jQuery选择器</p>
+<p>基础选择器<br>$(‘选择器’)，引号里面直接写css选择器即可，支持css的各种选择器。</p>
+<p>筛选选择器<br>语法 用法 用途<br>first $(‘li:first’)或$(‘li’).first() 获取第一个li元素<br>last $(‘li:last’)或$(‘li’).last() 获取最后一个li元素<br>eq() $(‘li:eq(2)’)或$(‘li’).eq(2) 获取索引号为2的li元素<br>odd $(‘li:odd’)或$(‘li’).odd() 获取索引号为奇数的元素<br>even $(‘li:even’)或$(‘li’).even() 获取索引号为偶数的元素</p>
+<p>其他筛选器<br>语法 用法 用途<br>parent $(‘li’).parent() 获取父级元素<br>parents $(‘li’).parents() 获取所有的祖先级元素<br>childern $(‘li’).childern() 获取子级元素<br>find $(‘li’).find() 获取所有子孙元素<br>siblings $(‘li’).siblings() 获取所有兄弟元素，除了自身<br>prev $(‘li’).prev() 获取相邻的上个元素<br>pervAll $(‘li’).pervAll() 获取所有上个元素<br>next $(‘li’).next() 获取相邻的下个元素<br>nextAll $(‘li’).nextAll() 获取所有下个元素<br>注意：以上获取多个元素的方法小括号里都可以写上选择器来确定某个元素。</p>
+<p>知识铺垫</p>
+<p>jQuery设置样式<br>第一种<br>$(‘div’).css(‘属性’,’值’)<br>第二种<br>$(‘div’).css({<br>属性:值,<br>属性:值<br>})</p>
+<p>注意：<br>第一种写法中属性和值都需要加引号，当值为数字时可以不用加引号<br>第二种写法中属性不需要加引号，值为数字时不需要加引号并且可以省略单位，但是值为字母时需要加引号，且当数字后面加单位或者%号也要加引号。</p>
+<p>iQuery中的排他思想<br>对当前元素进行设置，然后将其他兄弟元素样式清空<br>$(this).css(‘color’,’red’);<br>$(this).siblings().css(‘color’,’’);</p>
+<p>隐式迭代<br>//遍历获取到的所有元素的过程叫做隐式迭代<br>//就是给所有匹配到的元素进行循环遍历，简化了我们的操作<br>$(‘div’).hide()//给页面中所有的div隐藏，不需要再进行遍历</p>
+<p>链式编程<br>//链式编程是为了节省代码量<br>$(this).css(‘color’,’blue’).siblings().css(‘color’,’blue’);<br>//将自身颜色改成蓝色，再将所有兄弟元素改为蓝色。</p>
+<p>注意：在使用链式编程时，下个事件所在节点是上个事件结束后所在的节点<br>$(this).hide().parent().show().siblings(‘.box’).css(‘color’,’blue’);<br>//将自身隐藏，将父级显示，将父级的兄弟元素类名为box的元素颜色改为蓝色</p>
+<p>设置类名<br>添加<br>$(‘div’).addClass(‘box’);<br>删除<br>$(‘div’).removeClass(‘box’);<br>切换<br>$(‘div’).toggleClass(‘box’);</p>
+<p>注意：jQuery中操作类名不会对原先的类名产生影响。</p>
+<p>显示隐藏</p>
+<p>显示隐藏</p>
+<p>显示<br>$(‘div’).show(time,speed,fn)<br>//显示div<br>//time 可省略参数，表示动画时间，省略表示无动画，<br>//预定义参数字符串（‘slow’，‘normal’，‘fast’）<br>//speed 可省略参数，表示动画的速度曲线<br>//fn 可省略参数，表示动画结束后执行该函数</p>
+<p>隐藏<br>$(‘div’).show(time,speed,fn)<br>//同上</p>
+<p>切换<br>$(‘div’).toggle(time,speed,fn)<br>//同上</p>
+<p>注意：一下显示隐藏切换time动画时间默认为400<br>滑入滑出<br>下滑显示<br>$(‘div’).slideDown(time,speed,fn);<br>上拉隐藏<br>$(‘div’).slideUp(time,speed,fn);<br>切换<br>$(‘div’).slideToggle(time,speed,fn);</p>
+<p>淡入淡出<br>淡入<br>$(‘div’).fadeIn(time,speed,fn);<br>淡出<br>$(‘div’).fadeOut(time,speed,fn);<br>切换<br>$(‘div’).fadeToggle(time,speed,fn);<br>到达指定透明度<br>$(‘div’).fadeTo(opacity,time,speed,fn);<br>//opacity 透明度，必填</p>
+<p>自定义动画<br>element.animate(obj,speed,easing,fn);<br>//obj：想要更改的样式属性，以对象的形式传递，必须填写，属性性名不用带引号，<br>//如果是符合型写法需要采取驼峰命名法书写，其他参数可以省略</p>
+<p>注意：jQuery中的自定义动画只能对值是数字类型的属性进行动画。并且无法对window添加自定义动画，可以对thml或者body添加</p>
+<p>停止动画排队<br>动画或者效果一旦触发就会执行并且多次触发不会停止之前的动画，会进行排队。<br>停止动画排队的方法为：stop()；<br>element.stop().animate(obj,speed,easing,fn)<br>$(‘div’).stop().slideDown(time,speed,fn);</p>
+<p>事件切换</p>
+<p>jQurey中为我们添加了新的事件 hover ，功能类似css中的伪类选择器 :hover</p>
+<p>语法<br>$(‘div’).hover(fn1(){},fn2(){});<br>//鼠标经过处理函数写在fn1，鼠标离开事件处理函数写在fn2</p>
+<p>注意：如果只写一个函数那么鼠标经过和离开都会触发</p>
+<p>mouseenter 和 mouseleave 事件<br>mouseenter事件和mouseover 事件类似，都是鼠标经过触发事件，不同点时mouseenter 不会进行冒泡。</p>
+<p>mouseleave事件和mouseout事件类似，都是鼠标经过触发事件，不同点时mouseenter不会进行冒泡。</p>
+<p>第二天</p>
+<p>1.jQuery操作属性</p>
+<p>元素固有属性值prop()</p>
+<p>获取属性<br>$(‘div’).prop(‘属性名’)</p>
+<p>设置属性<br>$(‘div’).prop(‘属性名’,’属性值’)</p>
+<p>注意：prop() 除了普通属性操作，更适合操作表单属性：disabled / checked / selected 等。</p>
+<p>自定义属性值attr()</p>
+<p>获取自定义属性<br>$(‘div’).attr(‘属性名’)//类似原生getAttribute</p>
+<p>设置自定义属性<br>$(‘div’).attr(‘属性名’,’属性值’)//类似原生setAttribute</p>
+<p>注意：和原生的方法一样，attr()也可以获取和设置元素固有属性</p>
+<p>数据缓存data()</p>
+<p>data()方法可以在指定元素上存取数据，并不会修改DOM元素结构，在结构上是看不到的。页面刷新存储的数据就会消失。</p>
+<p>附加数据<br>$(‘div’).data(‘name’,’value’)</p>
+<p>获取数据<br>$(‘div’).data(‘name’)</p>
+<p>注意：data() 方法也可以用来获取H5自定义属性data-index，得到的是数字型</p>
+<p>2.jQuery文本属性值</p>
+<p>jQuery内容文本值</p>
+<p>元素内容<br>获取元素内容<br>element.html()//类似原生的innerHTML<br>设置元素内容<br>element.html(‘内容’)</p>
+<p>文本内容<br>获取元素内容<br>element.text()//类似原生的innerText<br>设置元素内容<br>element.text(‘内容’)</p>
+<p>表单的值val()<br>获取表单内容<br>element.val()//类似原生的value()<br>设置表单内容<br>element.val(‘内容’)</p>
+<p>3.jQuery元素操作</p>
+<p>遍历元素</p>
+<p>方法1</p>
+<p>$(‘div’).each(function(index,item){});</p>
+<p>1.each方法主要是用来遍历匹配的每一个元素，遍历的是原生DOM元素<br>2.回调函数中有两个参数，index是每个元素的索引号，item是每个原生对象<br>3.想要对item使用jQ方法需要转化成jQ对象</p>
+<p>方法2<br>$.each(obj,function(index,item){})</p>
+<p>1.$.each方法可以遍历任何对象，主要用来处理数据。<br>2.回调函数有两个参数，index表示成员的索引号，item表示每个成员<br>3.用此方法遍历获取的对象，item表示的是原生对象需要转化。</p>
+<p>创建，添加，删除</p>
+<p>创建<br>$(‘<li></li>‘)</p>
+<p>创建一个li标签</p>
+<p>添加<br>element.append(‘内容’)</p>
+<p>把内容放入匹配元素内最后面，类似原生的appendChlid方法<br>element.preppend(‘内容’)</p>
+<p>把内容放入匹配元素内最前面<br>element.after(‘内容’)</p>
+<p>把内容放入匹配元素的后面<br>element.before(‘内容’)</p>
+<p>把内容放入匹配元素的前面面</p>
+<p>删除<br>element.remove()</p>
+<p>删除目标元素（包括自身）<br>element.empty()</p>
+<p>删除目标元素的所有子节点（不包括自身）<br>element.html(‘’)</p>
+<p>清空目标元素的内容</p>
+<p>4.jquery尺寸和位置操作</p>
+<p>jQuery尺寸操作</p>
+<p>语法<br>语法 用法<br>width() / height()  获取元素的宽度和高度，只计算设置的宽高<br>innerWidth()  /  innerHeight() 获取元素的宽高，包含padding值<br>outerWidth()  /  outerHeight() 获取元素宽高，包含padding和border值<br>outerWidth(true)  /  outerHeight(true) 获取元素宽高，包含padding、border和margin<br>注意：以上返回值都是数字类型<br>参数为空，则是获取相应值<br>参数为数字则是修改值，参数可以不用写单位</p>
+<p>jQuery位置操作</p>
+<p>语法<br>语法 用法<br>offset() （1）offset 方法获取或设置被选中元素相对于文档的偏移坐标，跟父级没有关系（2）该方法有两个属性，offset().top  获取元素距离文档顶部的距离，offset().left  获取元素距离文档左侧的距离（3）可以设置元素的偏移：offset({top:10,left:20})<br>position() （1）position 方法获取或设置被选中元素相对于带有定位父级（包括祖先级）的距离，如果没有则以文档为准（2）该方法有两个属性，offset().top  获取元素距离带有定位父级顶部的距离，offset().left  获取元素距离带有定位父级左侧的距离（3）该方法只能获取不能设置<br>scrollTop() /  scrollLeft() （1）scroll 方法设置或获取元素被卷去的长度（2）不跟参数是获取，跟数字参数是设置</p>
+<p>第三天 </p>
+<p>jQuery事件注册</p>
+<p>语法<br>element.事件名(function(){})<br>$(‘div’).click(function(){})</p>
+<p>注意：事件名不需要加 on ，其他事件一样</p>
+<p>事件处理on() 绑定事件</p>
+<p>语法<br>绑定多个事件<br>$(‘div’).on({<br>click:function(){},<br>mouseover:function(){},<br>mouseout:function(){}<br>});<br>如果事件处理函数相同<br>$(‘div’).on(‘click mouseover mouseout’,function(){})<br>事件委托<br>$(‘div’).on(事件,触发元素,事件处理函数)<br>$(‘div’).on(‘click’,’a’,function(){})</p>
+<p>事件处理off()解绑事件</p>
+<p>语法<br>$(‘div’).off()//解绑div上所有的事件<br>$(‘div’).off(‘click’)//解绑div上的点击事件<br>$(‘div’).off(‘click’,’li’)//解绑事件委托</p>
+<p>如果有的事件只想触发依次可以使用 one() 来绑定事件（了解）</p>
+<p>自动触发事件trigger()</p>
+<p>语法<br>$(‘div’).lick()//简写形式<br>$(‘div’).trigger(‘click’)//第一种自动触发<br>$(‘div’).triggerHandler(‘click’)//第二种自动触发</p>
+<p>注意：triggerHandler方法不会触发元素的默认行为，和前两种不同。</p>
+<p>jQuery事件对象</p>
+<p>jQuery对DOM中的事件对象event进行了封装，兼容性更好，获取更方便，使用变化不大。事件被触发就会有事件对象的产生。</p>
+<p>语法<br>element.click(function(event){<br>    event.preventDefault()或者return false//阻止默认行为<br>    event.stopPropagation() //阻止事件冒泡<br>})</p>
+<p>jQuery拷贝对象</p>
+<p>语法<br>$.extend(deep,target,obj1,objN)</p>
+<p>1.deep：可以设置为false或者true，true为深拷贝，默认为false浅拷贝<br>2.target：要拷贝数据的对象<br>3.obj1：被拷贝的对象<br>4.objN：被拷贝的第N个对象<br>注意：浅拷贝会拷贝对象中的属性，改变对象中的属性值不会改变目标对象。而拷贝对象中的复杂数据类型只会复制复杂数据类型的地址，改变对象中的复杂数据也会修改目标对象对应的数据。<br>同一属性名的值会被后者覆盖</p>
+<p>jQuery多库共存（了解）</p>
+<p>实际开发中，很多项目连续开发十多年，jQuery版本不断更新，最初的 jQuery 版本无法满足需求，这时就需要保证在旧有版本正常运行的情况下，新的功能使用新的jQuery版本实现，这种情况被称为，jQuery 多库共存。</p>
+<p>语法<br>var hh =  $.noConflict()<br>将jQuery变量重新命名为hh</p>
+<p>jQuery插件</p>
+<p>jQuery 功能比较有限，想要更复杂的特效效果，可以借助于 jQuery 插件完成。 这些插件也是依赖于jQuery来完成的，所以必须要先引入<br>jQuery文件，因此也称为 jQuery 插件。<br>​    jQuery 插件常用的网站：<br>jQuery 插件库  <a target="_blank" rel="noopener" href="http://www.jq22.com/">http://www.jq22.com/</a><br>jQuery 之家   <a target="_blank" rel="noopener" href="http://www.htmleaf.com/">http://www.htmleaf.com/</a><br>jQuery 插件使用步骤：<br>引入相关文件。（jQuery 文件 和 插件文件）<br>复制相关html、css、js (调用插件)。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/02/09/WAB%20API/">
+                        <span class="hidden-mobile"></span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      var inputArea = document.querySelector("#local-search-input");
+      inputArea.onclick = function () {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+        this.onclick = null
+      }
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+
+</body>
+</html>

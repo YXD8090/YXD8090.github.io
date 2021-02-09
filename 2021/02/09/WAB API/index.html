@@ -1,0 +1,702 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;dark&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/6e013e7bd49724a94a1b4b3a494990db.jpeg">
+  <link rel="icon" type="image/png" href="/img/6e013e7bd49724a94a1b4b3a494990db.jpeg">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="新手报到">
+  <meta name="author" content="JonJon">
+  <meta name="keywords" content="前端程序员">
+  <title>YXD8090</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"yxd8090.github.io","root":"/","version":"1.8.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>YXD8090</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/d260c015b13896a686ad210edc635fc8.jpeg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-02-09 21:02" pubdate>
+        2021年2月9日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      9.7k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      108
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none"></h1>
+            
+            <div class="markdown-body">
+              <p>第一天<br>一、Api介绍<br>api是一些预定好的函数，目的是提供应用程序和程序员基于软件或硬件访问一组例程的能力。<br>简单来说就是一种工具方便程序员实现想要的功能。<br>就像是手机的充电口和充电线一样。我们不需要了解内部的运行原理只需要能够熟练运用即可。</p>
+<p>web Api<br>web Api是浏览器提供的一系列操作浏览器窗口和页面元素的接口。</p>
+<p>DOM文本对象模型<br>文本对象模型是w3c组织推荐的处理可扩展标记语言（html或xhtml）的标准接口。</p>
+<p>DOM树</p>
+<p>在DOM中最大的元素就是文档（document），文档包含html和里面的所有元素。<br>文档：文档就是一个页面，在DOM中用document表示；<br>节点：文档内所有内容都是节点，用node表示，例如标签，属性，文本，空格等等都可以看作一个节点。<br>元素节点：文档内所有的标签都是元素节点，用element表示<br>属性节点：所有标签的属性称为属性节点</p>
+<p>二、获取元素方法</p>
+<p>1.根据ID获取元素<br>document.getElementByID(‘id名’)</p>
+<div id="box">123</div>;
+var box = document.getElementByID('box');
+//注意getElementByID里的ID是大写，并且id名要加引号
+
+
+<p>2.根据标签名获取元素<br>document.getElementByTagName(‘标签名’)</p>
+<div>123</div>;
+<div>123</div>;
+<div>123</div>;
+//标签名也是要加引号。
+var box = document.getElementByTagName('div');
+//标签名获取元素得到一个对象集合的伪数组。想要拿到元素需要用for循环遍历
+//父元素节点.getElementByTagNamen()也可以用来获取父元素里面的某些子元素标签
+
+
+<p>3.H5新增获取元素方法(IE9以上支持)<br>（1）根据类名获取元素<br>document.getElementByClassName(‘类名’)</p>
+<div class="box">123</div>;
+<div class="box">123</div>;
+var box = document.getElementByClassName('box');
+//获取的也是伪数组，不可以获取父元素节点下的子元素节点
+
+
+<p>（2）根据选择器获取元素<br>document.querySelector(‘选择器’)⭐</p>
+<div class="box">123</div>;
+var box = document.querySelector('.box')
+//注意选择器必须写完整，比如类名选择器就写.box,id选择器就写#box
+//获取的是符合条件的第一个元素
+
+<p>document.querySelectorAll(‘选择器’)⭐</p>
+<div class="box">123</div>;
+<div class="box">123</div>;
+<div class="box">123</div>;
+var boxs = document.querySelectorAll('.box');
+//获取所有符合条件的元素，返回的也是伪数组
+
+
+<p>4.获取特殊元素HTML，body<br>获取body<br>document.body//返回值是body对象</p>
+<p>获取html<br>document.documentElement//返回值是html对象</p>
+<p>三、事件⭐<br>事件就是指网页中的元素通过某些事件可以触发某个程序，比如点击按钮弹出警示框等</p>
+<p>1.事件三要素<br>事件三要素是：事件源，事件类型，事件处理函数<br>（1）事件源 ：触发事件的元素（谁）；<br>（2）事件类型：触发事件的行为比如点击，移动鼠标等（什么事）；<br>（3）事件处理函数：触发事件后执行的代码（做什么）；</p>
+<p>2.执行事件的步骤<br>（1）获取事件源（获取元素）<br>（2）注册事件（添加事件类型）<br>（3）添加事件处理函数（采取函数赋值的形式）</p>
+<div>123</div>
+//获取事件源
+var div = document.qureySelector('div');
+//注册事件
+div.onclick = function (){
+    //添加事件处理函数
+    console.log('456')
+}
+//注意事件处理函数可以直接赋值，也可以将函数单独拿出来在事件后面写上函数名。
+div.onclick = fn;
+function fn (){
+    console.log('asda')
+}
+//注意这种写法函数名后面不能加（），否则会直接调用
+
+
+<p>4.常见的鼠标事件⭐<br>onclick 鼠标左击 onmouseover 鼠标经过<br>onmouseout 鼠标离开 onfocus 获取焦点<br>onblur 失去焦点 onmousemove 鼠标移动<br>onmouseup 鼠标弹起 onmousedown 鼠标按下</p>
+<p>四、操作元素<br>javascript的DOM是用来操作页面内容和样式的。</p>
+<p>1.获取和修改元素内容<br>元素.innerText</p>
+<div>123</div>;
+    var div = document.querySelector('div');
+    div.innerText = 'asf';//注意T要大写
+
+<p>注意：innerText只能读取或者修改纯文本内容，不包含换行空格等格式信息。</p>
+<p>元素.innerHTML（常用）</p>
+<div>123</div>;
+    var div = document.querySelector('div');
+    div.innerHTML = 'sadfa';//HTML要全部大写
+
+<p>注意：innerHTML能够读取或者修改元素的内容，格式和html标签都可以，但是有兼容性问题。<br>注意：这两个获取和修改元素内容的方法只对双标签有用，单标签无法使用。</p>
+<p>2.获取和修改元素属性<br>获取：元素名.属性名<br>修改：元素名.属性名 = ‘值’<br>例：<br>var input = document.querySelector(‘input’);<br>input.type = ‘text’;</p>
+<p>特殊属性：disabled（禁用），checked（复选框选中），selectde（单选框选中），他们的值是true，false。<br>注意：修改属性值的时候值一定要加’’引号，值的书写规范和html一样。<br>表单元素的内容可以通过获取value值获取内容。<br>类名class是保留字获取属性写法不是元素名.class ，正确写法是 元素名.className</p>
+<p>2.1标记变量（常用）<br>在练习京东密码输入框时用到了标记变量的用法。<br>标记变量就是设置一个变量来标记当前元素的状态，在每次改变元素属性或者样式的时候改变标记变量的值，通过判断标记变量的值来确定元素当前所处的状态。<br>注意：标记变量是程序员自己设置的不是固定的变量，通常使用flag作为变量名。</p>
+<p>3.操作样式属性</p>
+<p>（1）行内样式操作<br>行内样式操作创建和修改的元素样式是将样式通过行内样式写入结构中的，并且行内样式的权重高于内嵌式的样式。当修改的样式不是很多时使用。<br>（2）创建或者修改<br>元素名.style.样式名 = ’值‘；<br>例：<br>var var input = document.querySelector(‘input’);<br>input.style.color = ‘pink’;</p>
+<p>注意：样式名是有两个以上单词或者中划线的将中划线去除并且从第二个单词开始每个单词首字母大写<br>并且右边的样式值也要用’’引号包含。<br>当有变量参与遵循字符串的拼接方式</p>
+<p>（3）类名样式操作<br>类名样式操作，是通过修改或添加多个类名来实现样式的改变。<br>当需要修改多个元素的多个样式可以使用，在css中提前添加好相对应类名的样式<br>（4）添加或修改类名<br>input.className = ‘box ren’</p>
+<p>注意：值需要用引号包含，书写类名规范遵循html书写规范，两个类名中间用空格分开<br>className会直接更改元素类名把之前的覆盖掉</p>
+<p>第二天</p>
+<p>一、排他思想<br>如果有一组元素，想给这一组元素绑定事件，事件触发后某个元素修改样式其他元素不变，再次触发除了事件触发元素样式改变其他元素样式不变。这时就需要使用排他思想来处理。</p>
+<p>排他思想的核心是先干掉所有人，再单独设置。<br>1.事件触发后先将所有元素样式清除回复默认的样式<br>2.清除样式后再对需要改变样式的元素单独设置样式。<br>注意：顺序不能错</p>
+<p>二、自定义属性<br>1.获取属性值<br>获取属性值之前的方法是 元素.属性名 这种方法只能获取元素本身自带的属性。<br>元素名.getAttribute(‘属性名’) 这种方法可以获取到元素内所用已有属性，通常用来获取自定义属性。</p>
+<p>自定义属性是程序员自己给元素添加的属性，主要用途是用来区分和标记页面内多个相同元素，方便使用js来分别设置。</p>
+<p>2.设置属性值<br>元素名.属性名 = ’值‘；用来设置元素自带的属性<br>元素名.setAttribute（’属性名‘，’值‘）；主要用来设置自定义属性</p>
+<p>3.移除属性<br>元素名.removeAttribute（’属性名‘）；主要用来移除自定义属性</p>
+<p>4.案例<br>案例中通过设置自定义属性和绑定事件的元素进行一一对应。</p>
+<p>5.H5自定义属性（了解）<br>h5规定自定义属性名必须以data-开头并且赋值<br>h5新增元素名.dataset.属性名（获取的时候可以省略data-）；从ie11才开始支持</p>
+<p>三、节点<br>节点：网页中所有的内容都是节点。<br>一般节点至少有一下三个基本属性：<br>nodeType：节点类型；<br>nodeName：节点名称；<br>nodeValue：节点值；<br>元素节点nodeType值为1<br>属性节点nodeType值为2<br>文本节点nodeType值为3（包含文字，空格，换行等）<br>可以将节点根据层级关系进行划分为父子，兄弟层级。</p>
+<p>1.父级节点<br>节点名.parentNode  ：返回的是该元素最近的父级节点，注意是最近的父级节点</p>
+<p>2.子节点<br>（1）所有子节点<br>父节点名.childrenNodes  ：这是标准写法，获取的是父节点下的所有节点集合的伪数组包括元素节点，属性节点，文本节点等，想要获取类里面的元素节点需要专门处理，一般不建议使用</p>
+<p>（2）获取子元素节点（重点）<br>父节点名.children  ：这是非标准写法但是各个浏览器都支持，获取的是父节点下的所有子元素节点集合的位数组。</p>
+<p>获取第一个子节点<br>父节点.firstChild  ：获取第一个子节点，找不到则返回null，是从所有子节点里查找</p>
+<p>获取最后一个子节点<br>父节点.lastChild ：获取最后一个子节点，找不到则返回null，是从所有子节点里查找</p>
+<p>获取第一个子元素节点<br>父节点.firstElementChild ：获取第一个子元素节点，找不到返回null</p>
+<p>获取最后一个子元素节点<br>父节点.lastElementChild ：获取第一个子元素节点，找不到返回null</p>
+<p>注意：最后两个有兼容性问题IE9以上才支持。</p>
+<p>因为上面的方法有兼容性问题，lastChild又是从所有节点中获取，所以通过一下办法获取第一个和最后一个子元素节点<br>父节点.children[0]；第一个子元素<br>父节点.children[父节点.children.length - 1]；最后一个子元素。</p>
+<p>3.兄弟节点<br>（1）下一个兄弟节点<br>节点名.nextSibling  ：返回当前节点的下个兄弟节点，没有返回null；</p>
+<p>（2）上一个兄弟节点<br>节点名.previousSibling  ：返回当前节点的上个兄弟节点，没有返回null；</p>
+<p>（3）下一个兄弟元素节点<br>节点名.nextElementSibling ：返回当前节点的下个兄弟元素节点，没有返回null</p>
+<p>（4）上一个兄弟元素节点<br>节点名.previousElementSibling ：返回当前节点的下个兄弟元素节点，没有返回null</p>
+<p>注意后面两个有兼容性问题，为了解决兼容性问题我们可以自己封装函数<br>   function getNextElementSibling(element) {<br>      var el = element;//接收输入的元素<br>      while (el = el.nextSibling) {//循环判断el.nextSibling是否是元素节点<br>        if (el.nodeType === 1) {<br>            return el;//是则输出<br>        }<br>      }<br>      return null;//不是则返回null<br>    }  </p>
+<p>5.创建节点<br>document.createElement(‘元素名’) ：因为这是根据我们的需要创建的节点所以可以动态生成，也被称为动态创建元素节点。</p>
+<p>6.添加节点<br>节点名.appendChild（元素名）：将元素添加到指定父级节点列表的末尾</p>
+<p>节点名.insertBefore（元素名，指定节点）：将元素添加到父级节点内指定子节点的前面</p>
+<p>给元素添加标签也可以使用.innerHTML通过字符串的拼接实现。<br>div.innerHTML = ‘<a><span></span></a>‘;//也可以用来添加元素</p>
+<p>第三天</p>
+<p>一、节点操作</p>
+<p>1.删除节点<br>元素节点.removeChild（删除的元素）； 从父元素节点删除一个子节点返回的是删除的节点。</p>
+<p>2.复制节点<br>元素节点.cloneNode（）复制该节点<br>注意：若小括号里的是空值或者false则是浅拷贝只复制元素本身不包含内容。<br>若小括号里的值是true则是深拷贝，将元素内的所有内容和元素本身一起复制。<br>复制节点并不会直接添加到页面需要通过添加元素的方法添加</p>
+<p>3.创建元素的三种方法<br>（1）元素节点.innerHTML =  ‘要添加的内容’<br>将内容直接写入某个节点<br>（2）document.createElement（‘要创建的元素’）<br>创建的元素需要通过添加元素的方法才能添加到页面上<br>（3）document.write（‘要创建的元素’）<br>创建的元素默认是在body标签内从最后开始添加，但是当页面加载完成后调用会导致页面重绘只有write创建的元素。（很少使用）</p>
+<p>4.对比innerHTML和createElement效率<br>通过cosole.time(‘名称’)   cosole.timeEnd(‘名称’) 来获取两个代码之间的代码运行时间判断运行效率。<br>注意：小括号内的名称需要一致。<br>或者通过再代码执行前打印 +new Date()，运行后再次打印来获取代码运行时间。<br>（1）使用innerHTML字符串拼接方式（因为字符串的不可变性，所以会极度占用栈内存导致运行效率低）<br>（2）使用createElement方式效率一般<br>（3）因为innerHTML是通过字符串的拼接来完成元素的创建和添加的，所以通过数组的方式存储需要创建的元素，然后转换成字符串通过innerHTML完成创建和添加效率会高很多。</p>
+<p>二、DOM对象总结</p>
+<p>1.创建<br>document.wrie<br>innerHTML<br>document.createElement</p>
+<p>2.添加<br>appendChild<br>insertBefore</p>
+<p>3.删除<br>removeChild</p>
+<p>4.修改<br>主要通过dom元素的内容，属性，样式，值等来修改<br>1.修改元素属性：element.属性名 ，src，href，title等<br>2.修改双标签元素内容：innerHTML，innerText<br>3.修改表单元素内容：value，type，disabled，checked等<br>4.修改元素样式：style，className</p>
+<p>5.获取<br>1.DOM提供的API方法：getElementById，getElementByTagName，不推荐使用<br>2.H5新增方法：querySelector，querySelectorAll ，建议使用<br>3.节点操作获取元素：父（parentNode），子（children），兄（previousElementSibling，nextElementSibling）建议使用</p>
+<p>6.自定义属性<br>可以对元素添加属性和值，一般用来对自定义属性设置。<br>1.setAttribute:设置自定义属性<br>2.getAttribute:获取自定义属性值<br>3.removeAttribute:删除自定属性</p>
+<p>三、事件高级</p>
+<p>1.注册事件<br>传统方法</p>
+<div>hi~</div>
+div.onclick = function(){}
+
+<p>特点：注册的事件具有唯一性，同一个元素同一个事件只能设置一个。多次设置以最后一个为准</p>
+<p>监听注册</p>
+<p>addEventListener()（IE9以后支持）</p>
+<div>hi~</div>
+div.addEventListener('click',function(){})
+
+<p>特点：同一个元素同一个事件可以注册多个，会按照代码的先后顺序依次执行，可以接受三个参数<br>（1）type：事件类型字符串，比如‘click’，注意不要加on<br>（2）listener：事件处理函数，事件发生后会调用事件处理函数<br>（3）useCapture：可选参数，是一个布尔值，是否在捕获阶段执行事件处理函数，true为是，false为否</p>
+<p>attacheEvent() （IE678支持）（了解）</p>
+<div>hi~</div>
+div.attacheEvent('onclick',function(){})
+
+<p>可以接受两个参数<br>（1）eventNameWithOn:事件类型字符串，需要加on<br>（2）callback：事件处理函数</p>
+<p>事件监听兼容性处理（了解）</p>
+<p>2.删除事件</p>
+<p>传统注册方式<br>元素.onclick = ‘’;或者null</p>
+<p>监听注册方式<br>（1）元素 .removeEventListener(‘事件类型’，事件处理函数名)；<br>（2）元素.detachEvent（‘on事件类型’，事件处理函数名）；</p>
+<p>删除事件兼容性解决方案（了解）</p>
+<p>四、DOM事件流</p>
+<p>在html中标签是互相嵌套的，可以当作是一个盒子里面放另一个盒子。<br>事件流指的就是事件在页面中接受事件的顺序。<br>当事件发生时会在元素节点之间按照一定顺序传播，这个传播的顺序就是DOM事件流</p>
+<p>事件捕获：由DOM最顶层节点开始，然后逐级向下传播到最具体的元素接受的过程。<br>当前目标阶段：事件传播到最具体的元素执行事件处理函数阶段。<br>事件冒泡：由最具体的元素开始逐级向上传播到DOM最顶层的节点位置的过程。</p>
+<p>注意：<br>（1）js代码中只能执行捕获或者冒泡中的一个阶段<br>（2）传统注册事件方式和attachEvent只能得到冒泡阶段<br>（3）addEventListener第三个参数表示事件在捕获还是冒泡阶段调用事件处理函数，true表示捕获阶段，false表示冒泡阶段。<br>（4）有些事件是没有冒泡的，比如onblur，onfocus，onmouseenter，onmouseleave<br>（5）事件冒泡有时候我们并不需要，之后会设置阻止事件冒泡。</p>
+<p>五、事件对象</p>
+<p>在事件发生后，跟事件相关的一系列信息数据的集合都放到这个对象里，这个对象就是事件对象。</p>
+<p>事件对象的使用</p>
+<p>事件触发时就会产生事件对象，并且系统会以实参的形式传给事件处理函数。所以需要在事件处理函数中申明一个形参来接收事件对象。<br>事件处理函数的第一个形参都是用来接受事件对象的，event就是事件对象，通常写成e或者evt都可以形参的名称实际上可以是任何名字只要符合命名规范。</p>
+<p>事件对象的兼容性处理<br>在IE678中，浏览器不会给方法传递参数，如果需要的，需要到window.event中获取</p>
+<script>
+var div = document.querySelectior('click',function(e){
+    e = e || window.event;
+    //当e为false则返回后面的值
+    //当e为true则直接返回e
+})
+</script>
+
+
+<p>事件对象的属性和方法<br>1  e.target                  返回触发事件的对象（常用）<br>2.e.srcElemnt             返回触发事件的对象 非标准 ie678使用<br>3.e.type                      返回事件类型，如 click， mouseover 不带on<br>4.e.cancelBubble        阻止事件冒泡 非标准 ie678使用<br>5.e.returnValue           阻止默认事件（默认行为）非标准 ie678使用<br>6.e.stopPropagation()阻止事件冒泡 标准<br>7.e.preventDefault()   阻止默认事件 比如a链接跳转 标准<br>8.e.clientX/Y               鼠标在页面可视区域的坐标<br>9.e.pageX/Y               鼠标在页面的坐标<br>10.screepX/Y             鼠标在显示屏的坐标</p>
+<p>e.target 和  this的区别<br>this指向的是事件绑定的元素或者函数的调用者。<br>e.target 指向的是事件的触发者<br>区别：当父级和子级盒子都绑定相同事件时子级盒子触发事件会冒泡到父级，父级同样也会触发事件<br>这是this指向的时父级盒子，而e.target指向的是触发事件的子级盒子。</p>
+<p>阻止默认行为<br>e.preventDefault（）；标准写法<br>e.returnValue = false；低版本浏览器<br>return  false ； 也可以阻止默认行为没有兼容性问题。</p>
+<p>阻止事件冒泡<br>e.stopPropagation();标准写法<br>window.event.cancelBubble = true;非标准，利用事件对象cancelBubble属性<br>兼容性处理</p>
+<p>事件委托<br>原理<br>如果需要同时给多个元素设置相同的事件，可以给父级盒子设置事件通过target获取事件触发的元素来进行设置。<br>作用<br>值操作了一次DOM，提高了程序的性能，动态创建的子元素，也拥有事件。</p>
+<p>例：</p>
+<ul>
+<li>点击，变色</li>
+<li>点击，变色</li>
+<li>点击，变色</li>
+<li>点击，变色</li>
+<li>点击，变色</li>
+</ul>
+<script>
+var ul = document.querySelector('ul');
+ul.addEventListener('click',function(e){
+e.target.style.backgroundColor = 'blue';
+})
+
+<p></script></p>
+<p>六、常用鼠标按键<br>onclick                   鼠标点击<br>onmouseover        鼠标经过<br>onmouseout          鼠标离开<br>onfocus                 获取焦点<br>onblur                    失去焦点<br>onmousemove      鼠标移动<br>onmousedown      鼠标按下<br>onmouseup           鼠标弹起</p>
+<p>鼠标事件对象<br>e.clientX               鼠标相对于浏览器可视窗口的X坐标<br>e.clientY               鼠标相对于浏览器可视窗口的坐标<br>e.pageX               鼠标相对于文档页面的X坐标，ie9以上支持（常用）<br>e.pageY               鼠标相对于文档页面的坐标，ie9以上支持（常用）<br>e.screenX            鼠标型对于电脑屏幕的X坐标<br>e.screenY            鼠标型对于电脑屏幕的Y坐标</p>
+<p>通常通过page获取鼠标的位置</p>
+<p>第四天</p>
+<p>一、常用的键盘事件</p>
+<p>键盘事件<br>onkeyup         键盘按键松开<br>onkeydown     键盘按下<br>onkeypress     键盘按下  但是不能识别功能键，比如ctrl shift 箭头等</p>
+<p>注意：这三个事件的执行顺序是：keydown — keypress  —- keyup</p>
+<p>键盘事件对象<br>keyCode        返回该键的ASCII码值</p>
+<p>注意：keydown和keyup不区分大小写，可以返回所用按键<br>keypress不能识别功能键但是可以用来区分大小写，大写和小写返回的值不同。<br>在获取用户输入的最新内容时使用keyup，因为内容的输入分为：按键按下—-按下输入内容—-按键弹起，所以keyup可以获取用户输入的最新内容，而keydown只能获取上一次的输入内容。</p>
+<p>二、BOM</p>
+<p>什么时BOM<br>DOM时浏览器对象模型，它提供了独立于内容而于浏览器窗口进行交互的对象，核心对象时window。</p>
+<p>DOM缺乏标准所以兼容性较差，在BOM中顶级对象时window，主要是浏览器窗口交互的对象</p>
+<p>BOM构成<br>BOM比DOM更大，包含DOM</p>
+<p>BOM中的顶级对象window<br>window作为浏览器的顶级对象，具有双重作用。<br>1.它是js访问浏览器窗口的一个接口<br>2.它是一个全局对象，定义在全局作用域中的变量和函数都会变成window对象的属性和方法。<br>在调用window的属性和方法时可以省略window.，之前的对话框都属于window对象的方法。<br>注意：window下的一个特殊属性window.name</p>
+<p>window对象的常见事件<br>1.页面加载事件（重点）<br>（1）load<br>window.onload = function(){}<br>window.addEventListener(‘load’,function(){})</p>
+<p>load是页面加载事件，当页面内容完全加载完成后会触发该事件（包含图片，js脚本文件，css文件等），有了load就可以将js代码写在任何地方。<br>注意：传统注册事件方式只能注册一次，之后注册的会被覆盖，建议使用监听事件方式</p>
+<p>（2）DOMContentLoaded<br>window.addEventListener(‘DOMContentLoaded’,function(){})</p>
+<p>ie9以上才支持<br>DOMContentLoaded是当DOM结构加载完成后就触发，优点时当页面内容很多的时候load需要等待内容全部加载完成之后才能触发会等待很长时间，DOMContentLoaded只需要等页面结构加载完成就可以触发了，此时用户就可以使用交互效果，体验更好。</p>
+<p>2.调整窗口大小事件<br>resize<br>window.onresize = function(){}<br>window.addEventListener(‘resize’,function(){})</p>
+<p>resize时窗口调整事件，当浏览器窗口发生变化就会触发。通常用来完成响应式布局。<br>window.innerWidth 当前窗口的宽度</p>
+<p>3.定时器（重点）<br>setTimeout()一次性定时器（炸弹定时器）<br>window.setTimeout(function(){},1000)//(调用函数，延时事件单位毫秒)</p>
+<p>注意：window可以省略，函数可以写匿名函数，函数名或者’函数名()’最后一种方法不推荐<br>延时时间可以省略默认是0，如果写必须是毫秒<br>定时器可以有很多，多个定时器有自己唯一的数字ID一般从1开始，通常我们会使用变量来接收这个ID数。<br>回调函数就是没有立即执行的函数，比如时间处理函数，定时器等都是回调函数</p>
+<p>取消定时器<br>window.clearTimeout(timeoutID)</p>
+<p>注意：小括号里的参数是定时器的ID数或者接收该ID值的变量</p>
+<p>setInterval()循环定时器（闹钟定时器）<br>window.setInterval(function(){},1000)//(调用函数，间隔时间单位毫秒)</p>
+<p>setInterval()可以重复调用一个函数，每个一段时间就会去调用一次。<br>注意：window可以省略，函数可以写匿名函数，函数名或者’函数名()’最后一种方法不推荐<br>延时时间可以省略默认是0，如果写必须是毫秒<br>定时器可以有很多，多个定时器有自己唯一的数字ID一般从1开始，通常我们会使用变量来接收这个ID数<br>第一次执行也是间隔时间后执行。<br>停止计时器<br>window.clearInterval(intervalID)</p>
+<p>注意：小括号里的参数是定时器的ID数或者接收该ID值的变量</p>
+<p>this指向问题<br>this的指向在函数定义的时候无法确定，只有在函数调用的时候才能确定指向，一般情况下this指向的始终是调用它的对象。<br>1.全局作用域或者普通函数中的this指向的都是window<br>2.方法调用中谁调用指向谁<br>3.定时器中指向window<br>4.构造函数中this指向构造函数的实例（创建的对象）</p>
+<p>location对象<br>location属性用于获取或设置窗口的URL，并且可以用于解析URL。因为返回的是一个对象所以称为location对象。</p>
+<p>URL<br>统一资源定位符是互联网上标准资源的地址。互联网上的每个文件都有一个唯一的URL，它包含的信息指出文件的位置以及浏览器因该怎么处理它。<br>URL的一般语法格式为：<br>网络协议：// 主机（域名）/  路径 ？参数 # 片段<br>protocol://host[:port]/path/[?query]#fragment<br><a target="_blank" rel="noopener" href="http://www.itcast.cn/index.html?name=andy&amp;age=18#link">http://www.itcast.cn/index.html?name=andy&amp;age=18#link</a></p>
+<p>location对象属性<br>location.href                  获取或者设置整个URL（重点）<br>location.host                 返回主机（域名）<a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a><br>location.port                 返回端口号，如果没写返回空的字符串<br>location.pathname        返回路径<br>location.search             返回参数（重点）<br>location.hash                返回片段#后面内容常见于链接锚点</p>
+<p>修改location.href的值可以实现跳转</p>
+<p>通过表单域可以向另一个页面传递参数，传递的参数在URL中的location.search中。<br>参数在location.search中以键值对的形式储存，多个参数之间以&amp;分割。<br>获取search中的参数，需要先通过substr将？去除，再通过split(‘&amp;’)将每个参数分割成数组的形式，<br>最后再次使用split(‘=’)将每个参数里的参数名和值分割成数组。通过索引号获取相对应的数据。</p>
+<p>location对象的常用方法<br>location.assign()        跟href一样可以跳转页面<br>location.replace()       替换当前页面，因为不记录历史所以不能后退页面<br>location.reload()         重新加载页面，相当于刷新。</p>
+<p>navigator对象<br>navigator对象包含有关浏览器的信息，有很多属性，最常用的是userAgent，该属性可以返回由客户机发送服务器的user-agent头部的值。<br>判断用户使用哪个终端打开页面，实现跳转<br>if((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {<br>    window.location.href = “”;     //手机<br> } else {<br>    window.location.href = “”;     //电脑<br> }</p>
+<p>如果是手机则跳转到移动端页面，如果是电脑则跳转到pc端页面</p>
+<p>history对象<br>history对象包含用户在浏览器窗口中访问过的URL<br>back()            可以用作后退功能<br>forward()        前进功能<br>go(参数)         前进和后退，参数如果是2则前进2个页面，如果是-2则后退个页面。<br>history对象一般在实际开发中比较少用，但是会在一些 OA 办公系统中见到。</p>
+<p>三、JS执行机制</p>
+<p>JS运行机制<br>js是单线程语言，同一时间只能做一件事。<br>单线程就意味着所有任务都需要排队，前一个任务结束后后一个任务才会执行。<br>当前一个任务长时间没有完成，后一个任务就要一直等，这样会导致js运行效率底下。</p>
+<p>同步任务和异步任务<br>为了解决单线程的缺陷，利用多核CPU的计算能力，HTML5提出Web Worker标准，允许js脚本创建多个线程，但是子线程完全受主线程控制。于是JS中就出现了同步任务和异步任务</p>
+<p>同步任务<br>在主线程上排队执行的任务，只有前一个任务执行完毕，才能执行后一个任务</p>
+<p>异步任务<br>不进入主线程、而进入”任务队列”的任务，当主线程中的任务运行完了，才会从”任务队列”取出异步任务放入主线程执行。<br>js异步是通过回调函数实现的。<br>异步任务有以下几种：<br>1.普通事件：click，resize等；<br>2.资源加载：如load，error等；<br>3.定时器：setInterval等；<br>异步任务的相关函数（回调函数）放入任务队列中。</p>
+<p>JS执行机制<br>1.先执行栈中的同步任务。<br>2.异步任务（回调函数）放入任务队列。<br>3.当同步任务执行完后，系统就会依次读取任务队列中的异步任务，于是被读取的异步任务进入执行栈，开始执行。在主线程结束后会反复查询任务队列是否有需要执行的异步任务，这个动作被称为事件循环。</p>
+<p>第五天<br>一、元素偏移量</p>
+<p>offset<br>element.offsetParent         返回该元素最近带有定位的父级元素，如果没有则返回body<br>element.offsetTop              返回该元素相对最近带有定位父级元素的上偏移大小（没有单位）<br>element.offsetLeft              返回该元素相对最近带有定位父级元素的左偏移大小（没有单位）<br>element.offsetWidth           返沪该元素自身包括padding，border和内容的宽度（没有单位）<br>element.offsetHeight          返沪该元素自身包括padding，border和内容的高度（没有单位）</p>
+<p>offset 和style的区别</p>
+<p>offset<br>offset可以得到任意样式表中的样式值<br>offset系列获取的数值都是没有单位的<br>offsetWidth，offsetHeight包含padding，border和内容的宽高<br>offsetWidth等属性是只读属性，只能获取不能赋值</p>
+<p>style<br>style 只能得到行内样式表中的样式值<br>style.width 获得的是带有单位的字符串<br>style.width 获得不包含padding和border 的值<br>style.width 是可读写属性，可以获取也可以赋值</p>
+<p>元素可视区client系列<br>element.clientTop          返回元素上边框大小<br>element.clientLeft          返回元素左边框的大小<br>element.clientWidth       返回元素的宽度包括padding，返回的时数值<br>element.clientHeight     返回元素的高度包括padding，返回的时数值<br>注意：行内元素无法获取宽高</p>
+<p>立即执行函数<br>(function(){})()或者(function(){}())<br>作用：主要时创建一个独立的作用域，避免命名的冲突，学习了闭包后常用来创建小闭包<br>注意：当使用的是无分号书写的代码立即执行函数前要加！或者，之类的进行分割。</p>
+<p>淘宝flexible.js源码分析<br>一下三种情况都会触发load事件。<br>1.链接<br>2.刷新<br>3.前进后退<br>但是火狐有一个往返缓存的特性，这个缓存会将整个页面都保存，这时后退页面是不会触发load事件。此时就需要使用pageshow事件，pageshow是在load事件之后触发，并且根据事件对象中的persisted来判断是否是缓存中的页面触发的事件，是则返回true，否则返回false。注意pageshow需要给window绑定</p>
+<p>元素滚动scroll系列<br>element.scrollTop                返回被卷区的上侧距离，返回值不带单位<br>element.scrollLeft                返回被卷区的左侧距离，返回值不带单位<br>element.scrollWidth             返回自身内容宽度，不含border和padding<br>element.scrollHeight            返回自身内容高度，不含border和padding</p>
+<p>滚动条滚动事件<br>当页面滚动时会触发scroll事件。页面被卷区的距离是window.pageYOffset，window.pageXOffset（IE9以上支持）。通过window.scroll(x,y)让页面回到指定位置，注意里面的x，y必须写值，没有可以写0。</p>
+<p>获取页面被卷去的距离兼容性写法<br>function getScroll() {<br>    return {<br>      left: window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft||0,<br>      top: window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0<br>    };<br> }<br>使用的时候  getScroll().left</p>
+<p>mouseenter 和 mouseover 的区别<br>mouseenter 和 mouseover 都是鼠标经过触发。不同的是mouseenter经过子盒子不会触发，而mouseover经过子盒子时还会再触发。原因是因为mouseenter不会触发事件冒泡，和 mouseenter 相对应的鼠标离开 mouseleave 同样不会冒泡</p>
+<p>动画函数的封装<br>核心原理：通过计时器让元素每过一段时间移动一段距离，从而达到模拟动画的效果。<br>function animate (box,target,callback){<br>    //为了方式多次点击产生多个定时器，每次点击时先清除定时器<br>    clearInerval(box.timer);<br>    //为了防止清除其他元素的动画效果，对元素对象添加timer属性<br>    box.timer = setInterval(function(){<br>        //判断是否到达指定位置<br>        if (box.offsetLeft == target) {<br>            //通过逻辑中断判断callback是否有传值<br>            callback &amp;&amp; callback();<br>           return<br>        }<br>        //为了达到缓动动画的效果，减少每次移动的距离<br>        //设置变量 distance 距离 保存每次移动距离<br>        var distance = (target - box.offsetLeft) / 10<br>       //上述公式结果为小数，无线接近于0，导致无法到达指定位置，所以需要取整<br>       //大于0向上取整，小于0向下取整<br>       distance = distance &gt; 0 ? Math.ceil(distance) : Math.floor(distance);<br>       //每过10毫秒，向右移动1px<br>       box.style.left = box.offsetLeft + 1 + ‘px’;<br>    },10);<br>}</p>
+<p>第六天</p>
+<p>轮播图案例<br>案例在E:\html\html\wab Api\day06\lesson006\005-轮播图案例\index.html<br>主要使用封装好的欢动动画函数做动画，用自定义属性将按钮和圆点相对应。<br>通过在所有图片后面添加第一张图，当移动到最后一张图点击下一张时瞬间拉回第一张此时不要做动画，之后再过渡到第二张达到无缝循环的效果。<br>最后通过节流阀，在动画开始时关闭阀门结束后打开，避免多次点击后动画过快的情况。</p>
+<p>触摸事件<br>touchstart            手指触摸事件<br>touchmove          手指移动事件<br>touchend             手指离开事件</p>
+<p>触摸事件对象<br>touch.event  触摸事件对象<br>touches                         正在触摸屏幕的所有手指<br>targetTouches               正在触摸当前元素上的所有手指（重点）<br>changedTouches           手指状态发生了改变的列表，从无到有，从有到无</p>
+<p>targeTouches[0].pageX/Y  获取第一个手指在页面上的坐标<br>注意：手指移动过也会触发滚动屏幕所以需要阻止默认的屏幕滚动 e.preventDefault();</p>
+<p>移动端轮播图案例<br>因为移动端的兼容性比PC端好，所以动画部分可以使用transtion过渡动画，通过transform ：translateX/Y 来移动元素。<br>移动端的轮播图因为用户是可以通过手机缓慢拖动图片的，如果是拖动的是第一张和最后一张图片会出现空白的地方。这样用户体验不好，为了实现无缝衔接在第一张图片前面加最后一张图片，在最后一张图片加第一张图片，当滑动到最后一张图片之后瞬间拉到第二张图片上之后再按顺序滑动。当滑动到第一张图片之后瞬间推到倒数第二张图片上。</p>
+<p>classList属性<br>classList是H5新增的属性，IE10以上支持，用于元素类名的添，删，切换。<br>element.classList.add(‘类名’)            添加类名，在原来的基础上添加类名<br>element.classList.remove(‘类名’)      删除类名<br>element.classList.toggle(‘类名’)        切换类名，当元素有这个类名则删除这给类名，没有则添加<br>注意：这里的类名都不需要加.点</p>
+<p>click延时解决方案<br>移动端click事件会有300ms的延时，原因是因为移动端双击屏幕会缩放页面。<br>1.禁用缩放。</p>
+<meta name="viewport" content="user-scalable=no">
+
+<p>禁止用户缩放页面，同时去除了300ms的延时问题</p>
+<p>2.封装函数<br>当用户可以缩放页面时，通过封装函数来解决延时问题。<br>手指点击时记录时间，手指离开后的时间减去点击的时间&lt;150ms并且没有移动则视为点击。<br>//封装tap，解决click 300ms 延时<br>function tap (obj, callback) {<br>        var isMove = false;<br>        var startTime = 0; // 记录触摸时候的时间变量<br>        obj.addEventListener(‘touchstart’, function (e) {<br>            startTime = Date.now(); // 记录触摸时间<br>        });<br>        obj.addEventListener(‘touchmove’, function (e) {<br>            isMove = true;  // 看看是否有滑动，有滑动算拖拽，不算点击<br>        });<br>        obj.addEventListener(‘touchend’, function (e) {<br>            if (!isMove &amp;&amp; (Date.now() - startTime) &lt; 150) {  // 如果手指触摸和离开时间小于150ms 算点击<br>                callback &amp;&amp; callback(); // 执行回调函数<br>            }<br>            isMove = false;  //  取反 重置<br>            startTime = 0;<br>        });<br>}<br>//调用<br>  tap(div, function(){   // 执行代码  });</p>
+<p>3.fastclick插件<br>当有多个元素需要点击事件时，可以使用fast click插件解决<br>在GitHub官网上的lib文件中的fastclick，将文件中的代码复制粘贴，在自己的文件中引入。<br>最后在js文件中写入一下代码<br>if (‘addEventListener’ in document) {<br>    document.addEventListener(‘DOMContentLoaded’, function() {<br>        FastClick.attach(document.body);<br>    }, false);<br>}</p>
+<p>之后正常书写代码就可以了。<br>GitHub官网地址： <a target="_blank" rel="noopener" href="https://github.com/ftlabs/fastclick">https://github.com/ftlabs/fastclick</a></p>
+<p>移动端常用开发插件</p>
+<p>fast click<br>fast click插件，解决移动端click点击事件300ms延时问题</p>
+<p>Swiper轮播图插件（重点）<br>中文官网地址： <a target="_blank" rel="noopener" href="https://www.swiper.com.cn/">https://www.swiper.com.cn/</a><br>1.引入文件    2.根据规定语法使用<br>在官网中有详细的中文教程。</p>
+<p>其他插件<br>superslide： <a target="_blank" rel="noopener" href="http://www.superslide2.com/">http://www.superslide2.com/</a><br>iscroll： <a target="_blank" rel="noopener" href="https://github.com/cubiq/iscroll">https://github.com/cubiq/iscroll</a></p>
+<p>移动端视频插件zy.media.js</p>
+<p>本地存储<br>本地存储就是将数据存储在用户浏览器中，设置，读取更方便，并且刷新页面数据也不会丢失。<br>容量较大，sessionStorage约5M、localStorage约20M，但是存储的数据只能是字符串。</p>
+<p>window.sessionStorage<br>1.生命周期为关闭浏览器页面<br>2.在哦你一个页面下数据共享<br>3.以键值对的形式存储<br>保存数据：<br>sessionStorage.setItem(‘数据名’,’数据’)</p>
+<p>删除数据：<br>sessionStorage.removeItem(‘数据名’)</p>
+<p>获取数据：<br>sessionStorage.getItem(‘数据名’)</p>
+<p>清空数据：<br>sessionStorage.clear()</p>
+<p>window.localStorage<br>1.数据永久生效，除非手动删除<br>2.可以多个页面共享<br>3.以键值对形式存储<br>保存数据：<br>localStorage.setItem(‘数据名’,’数据’)</p>
+<p>删除数据：<br>localStorage.removeItem(‘数据名’)</p>
+<p>获取数据：<br>localStorage.getItem(‘数据名’)</p>
+<p>清空数据：<br>localStorage.clear()</p>
+<p>本地存储的序列化和反序列化<br>本地存储只能存储字符串，当需要存储数组或者对象时需要使用JSON.stringify()序列化方法将数组或者对象转换成字符串。之后再通过JSON.parse()反序列方法将本地存储的字符串数据转换成数组或者对象。<br>var arr = [1,2,3,4,5];<br>localStorage.setItem(‘数据名’,JSON.stringify(arr));<br>var res = localStorage.getItem(‘数据名’);<br>JSON.parse(res);</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/02/09/jquery/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile"></span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/02/09/JS%E9%AB%98%E7%BA%A7/">
+                        <span class="hidden-mobile">JS高级</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      var inputArea = document.querySelector("#local-search-input");
+      inputArea.onclick = function () {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+        this.onclick = null
+      }
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+
+</body>
+</html>
