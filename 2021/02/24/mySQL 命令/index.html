@@ -17,7 +17,7 @@
   <meta name="description" content="新手报到">
   <meta name="author" content="JonJon">
   <meta name="keywords" content="前端程序员">
-  <title>npm 命令 - YXD8090</title>
+  <title>mySQL 命令 - YXD8090</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -162,7 +162,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="npm 命令">
+            <span class="h2" id="subtitle" title="mySQL 命令">
               
             </span>
 
@@ -172,8 +172,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-02-22 15:59" pubdate>
-        2021年2月22日 下午
+      <time datetime="2021-02-24 21:06" pubdate>
+        2021年2月24日 晚上
       </time>
     </span>
   
@@ -184,7 +184,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      435 字
+      696 字
     </span>
   
 
@@ -194,7 +194,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      5
+      9
        分钟
     </span>
   
@@ -224,66 +224,50 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">npm 命令</h1>
+            <h1 style="display: none">mySQL 命令</h1>
             
             <div class="markdown-body">
-              <h2 id="npm-相关命令"><a href="#npm-相关命令" class="headerlink" title="npm 相关命令"></a>npm 相关命令</h2><p>下载指定包 </p>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmake">npm <span class="hljs-keyword">install</span> 包名<br></code></pre></td></tr></table></figure>
-<p>简写</p>
-<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs coffeescript"><span class="hljs-built_in">npm</span> i 包名<br></code></pre></td></tr></table></figure>
-<p>下载指定版本的包</p>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmake">npm <span class="hljs-keyword">install</span> 包名@指定版本<br></code></pre></td></tr></table></figure>
-<p>简写</p>
-<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs coffeescript"><span class="hljs-built_in">npm</span> i 包名@指定版本<br></code></pre></td></tr></table></figure>
-<p>查看指定包</p>
-<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs coffeescript"><span class="hljs-built_in">npm</span> view 包名<br></code></pre></td></tr></table></figure>
-<p>快速创建包管理配置文件 package.json </p>
-<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs coffeescript"><span class="hljs-built_in">npm</span> init -y<br></code></pre></td></tr></table></figure>
-<p>注意：</p>
-<ul>
-<li>该命令必须在项目的根目录下执行</li>
-<li>项目目录名不能包含汉字或者空格</li>
-<li>package.json 文件在每次安装包时都会记录包名和版本不需要手动修改</li>
-</ul>
-<p>下载所有需要的包</p>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmake">npm <span class="hljs-keyword">install</span><br></code></pre></td></tr></table></figure>
-<p>简写</p>
-<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs coffeescript"><span class="hljs-built_in">npm</span> i <br></code></pre></td></tr></table></figure>
-<p>卸载指定包</p>
-<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs coffeescript"><span class="hljs-built_in">npm</span> uninstall 包名<br></code></pre></td></tr></table></figure>
-<p>安装开发测试阶段的包，-D和包名没有顺序要求</p>
-<figure class="highlight q"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs q">npm install --<span class="hljs-built_in">save</span>-<span class="hljs-built_in">dev</span> 包名@版本号<br></code></pre></td></tr></table></figure>
-<p>简写</p>
-<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs coffeescript"><span class="hljs-built_in">npm</span> i -D 包名@版本号<br></code></pre></td></tr></table></figure>
-<p>查看npm 包下载源</p>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">npm<span class="hljs-built_in"> config </span><span class="hljs-builtin-name">get</span> registry<br></code></pre></td></tr></table></figure>
-<p>修改npm 包下载源</p>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">npm<span class="hljs-built_in"> config </span><span class="hljs-builtin-name">set</span> <span class="hljs-attribute">registry</span>=https://registry.npm.taobao.org/<br></code></pre></td></tr></table></figure>
-<p>下载nrm 工具并配置到全局</p>
-<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs coffeescript"><span class="hljs-built_in">npm</span> i -g nrm<br></code></pre></td></tr></table></figure>
-<h2 id="使用nrm-查看所有下载源，带星号的为当前下载源"><a href="#使用nrm-查看所有下载源，带星号的为当前下载源" class="headerlink" title="使用nrm 查看所有下载源，带星号的为当前下载源"></a>使用nrm 查看所有下载源，带星号的为当前下载源</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">nrm ls</span><br></code></pre></td></tr></table></figure>
-<p>使用nrm 查修改下载源</p>
-<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs actionscript">nrm <span class="hljs-keyword">use</span> 下载源名称<br></code></pre></td></tr></table></figure>
-<p>下载全局包</p>
-<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs coffeescript"><span class="hljs-built_in">npm</span> i -g 包名<br></code></pre></td></tr></table></figure>
-<p>卸载全局包</p>
-<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs coffeescript"><span class="hljs-built_in">npm</span> uninstall -g 包名<br></code></pre></td></tr></table></figure>
-<p>下载将 md 文件转换成 html 文件的工具</p>
-<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">npm</span> i -g i<span class="hljs-number">5</span>ting_toc<br></code></pre></td></tr></table></figure>
-<h2 id="i5ting-toc"><a href="#i5ting-toc" class="headerlink" title="i5ting_toc"></a>i5ting_toc</h2><p>将 md 文件转换成 html 文件</p>
-<figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mathematica"><span class="hljs-type">i5ting_toc</span> <span class="hljs-operator">-</span><span class="hljs-variable">f</span> <span class="hljs-built_in">URL</span> <span class="hljs-built_in">File</span><br></code></pre></td></tr></table></figure>
-<p>URL为待转换的 md 文件路径<br>File 为转换后的文件名称</p>
-<p>将 md 文件转换成 html 后打开默认浏览器预览</p>
-<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs livecodeserver">i5ting_toc -f <span class="hljs-built_in">URL</span> -o<br></code></pre></td></tr></table></figure>
-<p>登录 npm 官网</p>
-<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs coffeescript"><span class="hljs-built_in">npm</span> login <br></code></pre></td></tr></table></figure>
-<p>注意：登录 npm 官网需要将下载源修改为 npm 官网地址  </p>
-<p>发布自己的包</p>
-<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs coffeescript"><span class="hljs-built_in">npm</span> publish<br></code></pre></td></tr></table></figure>
-<p>注意：该命令在需要发布包的目录下执行  </p>
-<p>删除自己发布的包</p>
-<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ada">npm publish 包名 <span class="hljs-comment">--force</span><br></code></pre></td></tr></table></figure>
-
+              <h2 id="查询数据"><a href="#查询数据" class="headerlink" title="查询数据"></a>查询数据</h2><p>通过 * 把 users 表格内的所有数据查询出来。<br>注意：如果需要运行多行代码需要在每行代码后加 ; 号</p>
+<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> users;<br></code></pre></td></tr></table></figure>
+<p>从 users 表中将 username 列中的数据查询出来,多个列查询用 , 逗号分割</p>
+<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">select</span> username,<span class="hljs-keyword">password</span> <span class="hljs-keyword">from</span> users;<br></code></pre></td></tr></table></figure>
+<h2 id="插入数据"><a href="#插入数据" class="headerlink" title="插入数据"></a>插入数据</h2><p>向 users 表中插入数据,列和值是一一对应的。列名之间用逗号分割，值同上<br>使用 value 只能插入一行数据， values 可以同时插入多行数据，所以建议使用 values</p>
+<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">insert</span> <span class="hljs-keyword">into</span> users(username, <span class="hljs-keyword">password</span>) <span class="hljs-keyword">values</span>(<span class="hljs-string">&#x27;xh1&#x27;</span>, <span class="hljs-string">&#x27;09831&#x27;</span>), (<span class="hljs-string">&#x27;xh2&#x27;</span>, <span class="hljs-string">&#x27;09831&#x27;</span>);<br><span class="hljs-keyword">insert</span> <span class="hljs-keyword">into</span> users(username,<span class="hljs-keyword">password</span>) <span class="hljs-keyword">value</span>(<span class="hljs-string">&#x27;小红&#x27;</span>,<span class="hljs-string">&#x27;123456&#x27;</span>);<br></code></pre></td></tr></table></figure>
+<h2 id="修改数据"><a href="#修改数据" class="headerlink" title="修改数据"></a>修改数据</h2><p>通过 update 修改 id 为 5 的用户密码修改为 888888,注意一定要加 where 条件否则会修改全部数据</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">update<span class="hljs-built_in"> users </span><span class="hljs-builtin-name">set</span> <span class="hljs-attribute">password</span>=<span class="hljs-string">&#x27;888888&#x27;</span> where <span class="hljs-attribute">id</span>=5;<br></code></pre></td></tr></table></figure>
+<p>更改一行多个列的数据,多列数据之间用逗分割 更新 id=4 用户的 password 和 status</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">update<span class="hljs-built_in"> users </span><span class="hljs-builtin-name">set</span> <span class="hljs-attribute">password</span>=<span class="hljs-string">&#x27;000000&#x27;</span>,status=1 where <span class="hljs-attribute">username</span>=<span class="hljs-string">&#x27;小红&#x27;</span>;<br></code></pre></td></tr></table></figure>
+<h2 id="删除数据"><a href="#删除数据" class="headerlink" title="删除数据"></a>删除数据</h2><p>使用 delete 删除表内的指定数据，注意一定要加 where 条件否则会是删除全部数据</p>
+<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">delete</span> <span class="hljs-keyword">from</span> users <span class="hljs-keyword">where</span> id=<span class="hljs-number">6</span>;<br></code></pre></td></tr></table></figure>
+<h2 id="演示-where-子句"><a href="#演示-where-子句" class="headerlink" title="演示 where 子句"></a>演示 where 子句</h2><p>查询 status=0 的数据</p>
+<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> users <span class="hljs-keyword">where</span> status=<span class="hljs-number">0</span>; <br></code></pre></td></tr></table></figure>
+<p>查询 id&gt;2 的数据             </p>
+<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> users <span class="hljs-keyword">where</span> id&gt;<span class="hljs-number">2</span>;     <br></code></pre></td></tr></table></figure>
+<p>查询 status 值不等于 0 的数据         </p>
+<figure class="highlight fortran"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs fortran"><span class="hljs-keyword">select</span> * from users <span class="hljs-keyword">where</span> <span class="hljs-keyword">status</span> &lt;&gt;<span class="hljs-number">0</span>;   <br>```    <br>查询 <span class="hljs-keyword">status</span> 值不等于 <span class="hljs-number">1</span> 的数据     <br></code></pre></td></tr></table></figure>
+<p>select * from users where status != 1;        </p>
+<figure class="highlight tap"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs tap">查询 id 值 在<span class="hljs-number"> 1 </span>到<span class="hljs-number"> 4 </span>之间的数据(包含1和4)    <br></code></pre></td></tr></table></figure>
+<p>select * from users where id between 1 and 4;    </p>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">查询 <span class="hljs-keyword">password</span> 值中以 <span class="hljs-number">1</span> 结尾的数据<br></code></pre></td></tr></table></figure>
+<p>select * from users where password like ‘%1’;   </p>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">查询 <span class="hljs-keyword">password</span> 值中以 <span class="hljs-number">1</span> 开头的数据<br></code></pre></td></tr></table></figure>
+<p>select * from users where password like ‘1%’;    </p>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">查询 <span class="hljs-keyword">password</span> 值中包含 <span class="hljs-number">1</span> 的数据<br></code></pre></td></tr></table></figure>
+<p>select * from users where password like ‘%1%’;   </p>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs mipsasm"><span class="hljs-comment">## and 和 or 条件子句</span><br>使用 <span class="hljs-keyword">and </span>查询 tatus=<span class="hljs-number">0</span> 并且 id&lt;<span class="hljs-number">3</span> 的数据， <span class="hljs-keyword">and </span>表示多个条件都满足的数据<br></code></pre></td></tr></table></figure>
+<p>select * from users where status=0 and id&lt;3;</p>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs mipsasm"><br>使用 <span class="hljs-keyword">or </span>查询 tatus=<span class="hljs-number">0</span> 或者 id&lt;<span class="hljs-number">3</span> 的数据， <span class="hljs-keyword">or </span>表示多个条件中只要满足其中一个的数据<br></code></pre></td></tr></table></figure>
+<p>select * from users where status=0 or id&lt;3;</p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs crmsh"><span class="hljs-comment">## 排序</span><br>使用 <span class="hljs-keyword">order</span> <span class="hljs-title">by</span> 对数据进行排序<br>查询所有数据，并按照 status 值升序排序,默认升序<br></code></pre></td></tr></table></figure>
+<p>select * from users order by status asc;  </p>
+<figure class="highlight fortran"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs fortran">查询所有数据，并按照 <span class="hljs-keyword">status</span> 值降序排序<br></code></pre></td></tr></table></figure>
+<p>select * from users order by status desc; </p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs applescript">多重排序: 查询所有数据， 先按照 status 升序排序，后按照 <span class="hljs-built_in">id</span> 降序排序<br></code></pre></td></tr></table></figure>
+<p>select * from users order by status asc,id desc;</p>
+<figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs axapta"><br>注意: 当同时使用 <span class="hljs-keyword">where</span> 和 <span class="hljs-keyword">order</span> <span class="hljs-keyword">by</span> 时，需要将 <span class="hljs-keyword">order</span> <span class="hljs-keyword">by</span> 写在 <span class="hljs-keyword">where</span> 后面。<br></code></pre></td></tr></table></figure>
+<p>select * from users where id&gt;2 order by id desc;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">返回匹配的数据行数<br></code></pre></td></tr></table></figure>
+<p>select count(*) from users;<br>```</p>
 
             </div>
             <hr>
@@ -300,18 +284,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/02/24/mySQL%20%E5%91%BD%E4%BB%A4/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">mySQL 命令</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/02/22/npm%20%E6%A8%A1%E5%9D%97%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6/">
-                        <span class="hidden-mobile">模块加载机制</span>
+                      <a href="/2021/02/22/npm%E5%91%BD%E4%BB%A4/">
+                        <span class="hidden-mobile">npm 命令</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
