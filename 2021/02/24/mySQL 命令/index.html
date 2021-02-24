@@ -184,7 +184,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      696 字
+      691 字
     </span>
   
 
@@ -244,31 +244,31 @@
 <p>查询 id&gt;2 的数据             </p>
 <figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> users <span class="hljs-keyword">where</span> id&gt;<span class="hljs-number">2</span>;     <br></code></pre></td></tr></table></figure>
 <p>查询 status 值不等于 0 的数据         </p>
-<figure class="highlight fortran"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs fortran"><span class="hljs-keyword">select</span> * from users <span class="hljs-keyword">where</span> <span class="hljs-keyword">status</span> &lt;&gt;<span class="hljs-number">0</span>;   <br>```    <br>查询 <span class="hljs-keyword">status</span> 值不等于 <span class="hljs-number">1</span> 的数据     <br></code></pre></td></tr></table></figure>
-<p>select * from users where status != 1;        </p>
-<figure class="highlight tap"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs tap">查询 id 值 在<span class="hljs-number"> 1 </span>到<span class="hljs-number"> 4 </span>之间的数据(包含1和4)    <br></code></pre></td></tr></table></figure>
-<p>select * from users where id between 1 and 4;    </p>
-<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">查询 <span class="hljs-keyword">password</span> 值中以 <span class="hljs-number">1</span> 结尾的数据<br></code></pre></td></tr></table></figure>
-<p>select * from users where password like ‘%1’;   </p>
-<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">查询 <span class="hljs-keyword">password</span> 值中以 <span class="hljs-number">1</span> 开头的数据<br></code></pre></td></tr></table></figure>
-<p>select * from users where password like ‘1%’;    </p>
-<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">查询 <span class="hljs-keyword">password</span> 值中包含 <span class="hljs-number">1</span> 的数据<br></code></pre></td></tr></table></figure>
-<p>select * from users where password like ‘%1%’;   </p>
-<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs mipsasm"><span class="hljs-comment">## and 和 or 条件子句</span><br>使用 <span class="hljs-keyword">and </span>查询 tatus=<span class="hljs-number">0</span> 并且 id&lt;<span class="hljs-number">3</span> 的数据， <span class="hljs-keyword">and </span>表示多个条件都满足的数据<br></code></pre></td></tr></table></figure>
-<p>select * from users where status=0 and id&lt;3;</p>
-<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs mipsasm"><br>使用 <span class="hljs-keyword">or </span>查询 tatus=<span class="hljs-number">0</span> 或者 id&lt;<span class="hljs-number">3</span> 的数据， <span class="hljs-keyword">or </span>表示多个条件中只要满足其中一个的数据<br></code></pre></td></tr></table></figure>
-<p>select * from users where status=0 or id&lt;3;</p>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs crmsh"><span class="hljs-comment">## 排序</span><br>使用 <span class="hljs-keyword">order</span> <span class="hljs-title">by</span> 对数据进行排序<br>查询所有数据，并按照 status 值升序排序,默认升序<br></code></pre></td></tr></table></figure>
-<p>select * from users order by status asc;  </p>
-<figure class="highlight fortran"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs fortran">查询所有数据，并按照 <span class="hljs-keyword">status</span> 值降序排序<br></code></pre></td></tr></table></figure>
-<p>select * from users order by status desc; </p>
-<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs applescript">多重排序: 查询所有数据， 先按照 status 升序排序，后按照 <span class="hljs-built_in">id</span> 降序排序<br></code></pre></td></tr></table></figure>
-<p>select * from users order by status asc,id desc;</p>
-<figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs axapta"><br>注意: 当同时使用 <span class="hljs-keyword">where</span> 和 <span class="hljs-keyword">order</span> <span class="hljs-keyword">by</span> 时，需要将 <span class="hljs-keyword">order</span> <span class="hljs-keyword">by</span> 写在 <span class="hljs-keyword">where</span> 后面。<br></code></pre></td></tr></table></figure>
-<p>select * from users where id&gt;2 order by id desc;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">返回匹配的数据行数<br></code></pre></td></tr></table></figure>
-<p>select count(*) from users;<br>```</p>
-
+<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> users <span class="hljs-keyword">where</span> status &lt;&gt;<span class="hljs-number">0</span>;   <br></code></pre></td></tr></table></figure>
+<p>查询 status 值不等于 1 的数据     </p>
+<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> users <span class="hljs-keyword">where</span> status != <span class="hljs-number">1</span>;		<br></code></pre></td></tr></table></figure>
+<p>查询 id 值 在 1 到 4 之间的数据(包含1和4)    </p>
+<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> users <span class="hljs-keyword">where</span> id <span class="hljs-keyword">between</span> <span class="hljs-number">1</span> <span class="hljs-keyword">and</span> <span class="hljs-number">4</span>;    <br></code></pre></td></tr></table></figure>
+<p>查询 password 值中以 1 结尾的数据</p>
+<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> users <span class="hljs-keyword">where</span> <span class="hljs-keyword">password</span> <span class="hljs-keyword">like</span> <span class="hljs-string">&#x27;%1&#x27;</span>;   <br></code></pre></td></tr></table></figure>
+<p>查询 password 值中以 1 开头的数据</p>
+<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> users <span class="hljs-keyword">where</span> <span class="hljs-keyword">password</span> <span class="hljs-keyword">like</span> <span class="hljs-string">&#x27;1%&#x27;</span>;    <br></code></pre></td></tr></table></figure>
+<p>查询 password 值中包含 1 的数据</p>
+<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> users <span class="hljs-keyword">where</span> <span class="hljs-keyword">password</span> <span class="hljs-keyword">like</span> <span class="hljs-string">&#x27;%1%&#x27;</span>;   <br></code></pre></td></tr></table></figure>
+<h2 id="and-和-or-条件子句"><a href="#and-和-or-条件子句" class="headerlink" title="and 和 or 条件子句"></a>and 和 or 条件子句</h2><p>使用 and 查询 tatus=0 并且 id&lt;3 的数据， and 表示多个条件都满足的数据</p>
+<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> users <span class="hljs-keyword">where</span> status=<span class="hljs-number">0</span> <span class="hljs-keyword">and</span> id&lt;<span class="hljs-number">3</span>;<br></code></pre></td></tr></table></figure>
+<p>使用 or 查询 tatus=0 或者 id&lt;3 的数据， or 表示多个条件中只要满足其中一个的数据</p>
+<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> users <span class="hljs-keyword">where</span> status=<span class="hljs-number">0</span> <span class="hljs-keyword">or</span> id&lt;<span class="hljs-number">3</span>;<br></code></pre></td></tr></table></figure>
+<h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><p>使用 order by 对数据进行排序<br>查询所有数据，并按照 status 值升序排序,默认升序</p>
+<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> users <span class="hljs-keyword">order</span> <span class="hljs-keyword">by</span> status <span class="hljs-keyword">asc</span>;  <br></code></pre></td></tr></table></figure>
+<p>查询所有数据，并按照 status 值降序排序</p>
+<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> users <span class="hljs-keyword">order</span> <span class="hljs-keyword">by</span> status <span class="hljs-keyword">desc</span>; <br></code></pre></td></tr></table></figure>
+<p>多重排序: 查询所有数据， 先按照 status 升序排序，后按照 id 降序排序</p>
+<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> users <span class="hljs-keyword">order</span> <span class="hljs-keyword">by</span> status <span class="hljs-keyword">asc</span>,id <span class="hljs-keyword">desc</span>;<br></code></pre></td></tr></table></figure>
+<p>注意: 当同时使用 where 和 order by 时，需要将 order by 写在 where 后面。</p>
+<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> users <span class="hljs-keyword">where</span> id&gt;<span class="hljs-number">2</span> <span class="hljs-keyword">order</span> <span class="hljs-keyword">by</span> id <span class="hljs-keyword">desc</span>;<br></code></pre></td></tr></table></figure>
+<p>返回匹配的数据行数</p>
+<figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">select</span> <span class="hljs-built_in">count</span>(*) <span class="hljs-keyword">from</span> users;<br></code></pre></td></tr></table></figure>
             </div>
             <hr>
             <div>
