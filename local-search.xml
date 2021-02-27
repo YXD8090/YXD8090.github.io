@@ -4,7 +4,20 @@
   
   
   <entry>
-    <title></title>
+    <title>认证方案</title>
+    <link href="/2021/02/27/%E8%AE%A4%E8%AF%81%E6%96%B9%E6%A1%88/"/>
+    <url>/2021/02/27/%E8%AE%A4%E8%AF%81%E6%96%B9%E6%A1%88/</url>
+    
+    <content type="html"><![CDATA[<h2 id="开发模式"><a href="#开发模式" class="headerlink" title="开发模式"></a>开发模式</h2><h3 id="1-服务端渲染的-Web-开发模式"><a href="#1-服务端渲染的-Web-开发模式" class="headerlink" title="1.服务端渲染的 Web 开发模式"></a>1.服务端渲染的 Web 开发模式</h3><p>服务端渲染的概念：服务器发送给客户端的 HTML 页面，是在服务器通过字符串的拼接，动态生成的。因此，客户端不需要使用 Ajax 这样的技术额外请求页面的数据。</p><h4 id="1-1-服务端渲染的优缺点"><a href="#1-1-服务端渲染的优缺点" class="headerlink" title="1.1 服务端渲染的优缺点"></a>1.1 服务端渲染的优缺点</h4><p>优点：</p><ol><li>前端耗时少。因为服务器端负责动态生成 HTML 内容，浏览器只需要直接渲染页面即可。尤其是移动端，更省电。</li><li>有利于SEO。因为服务器端响应的是完整的 HTML 页面内容，所以爬虫更容易爬取获得信息，更有利于 SEO。<br>缺点：</li><li>占用服务器端资源。即服务器端完成 HTML 页面内容的拼接，如果请求较多，会对服务器造成一定的访问压力。</li><li>不利于前后端分离，开发效率低。使用服务器端渲染，则无法进行分工合作，尤其对于前端复杂度高的项目，不利于<br>项目高效开发。</li></ol><h3 id="2-前后端分离的-Web-开发模式"><a href="#2-前后端分离的-Web-开发模式" class="headerlink" title="2. 前后端分离的 Web 开发模式"></a>2. 前后端分离的 Web 开发模式</h3><p>前后端分离的概念：前后端分离的开发模式，依赖于 Ajax 技术的广泛应用。简而言之，前后端分离的 Web 开发模式，就是后端只负责提供 API 接口，前端使用 Ajax 调用接口的开发模式。</p><h4 id="2-1-前后端分离的优缺点"><a href="#2-1-前后端分离的优缺点" class="headerlink" title="2.1 前后端分离的优缺点"></a>2.1 前后端分离的优缺点</h4><p>优点：</p><ol><li>开发体验好。前端专注于 UI 页面的开发，后端专注于api 的开发，且前端有更多的选择性。</li><li>用户体验好。Ajax 技术的广泛应用，极大的提高了用户的体验，可以轻松实现页面的局部刷新。</li><li>减轻了服务器端的渲染压力。因为页面最终是在每个用户的浏览器中生成的。<br>缺点：</li><li>不利于 SEO。因为完整的 HTML 页面需要在客户端动态拼接完成，所以爬虫对无法爬取页面的有效信息。（解决方<br>案：利用 Vue、React 等前端框架的 SSR （server side render）技术能够很好的解决 SEO 问题！）</li></ol><h3 id="3-如何选择-Web-开发模式"><a href="#3-如何选择-Web-开发模式" class="headerlink" title="3. 如何选择 Web 开发模式"></a>3. 如何选择 Web 开发模式</h3><ul><li>比如企业级网站，主要功能是展示而没有复杂的交互，并且需要良好的 SEO，则这时我们就需要使用服务器端渲染；</li><li>而类似后台管理项目，交互性比较强，不需要考虑 SEO，那么就可以使用前后端分离的开发模式。</li></ul><h2 id="认证方案"><a href="#认证方案" class="headerlink" title="认证方案"></a>认证方案</h2><p>对于服务端渲染和前后端分离这两种开发模式来说，分别有着不同的身份认证方案：</p><ol><li>服务端渲染推荐使用 Session 认证机制</li><li>前后端分离推荐使用 JWT 认证机制</li></ol><h3 id="session-认证机制"><a href="#session-认证机制" class="headerlink" title="session 认证机制"></a>session 认证机制</h3><h4 id="HTTP-的无状态性"><a href="#HTTP-的无状态性" class="headerlink" title="HTTP 的无状态性"></a>HTTP 的无状态性</h4><p>HTTP 协议的无状态性，指的是客户端的每次 HTTP 请求都是独立的，连续多个请求之间没有直接的关系，服务器不会主动保留每次 HTTP 请求的状态。</p><h4 id="突破无状态性"><a href="#突破无状态性" class="headerlink" title="突破无状态性"></a>突破无状态性</h4><p>通过浏览器内置的 cookie 保存用户相关信息,每次访问时都会添加到请求中为服务器提供身份确认的信息。</p><h4 id="Cookie"><a href="#Cookie" class="headerlink" title="Cookie"></a>Cookie</h4><p>Cookie 是存储在用户浏览器中的一段不超过 4 KB 的字符串。它由一个名称（Name）、一个值（Value）和其它几个用于控制 Cookie 有效期、安全性、使用范围的可选属性组成。</p><p>Cookie的几大特性：</p><ol><li>自动发送</li><li>域名独立</li><li>过期时限</li><li>4KB 限制</li></ol><h4 id="Cookie-在身份认证中的作用"><a href="#Cookie-在身份认证中的作用" class="headerlink" title="Cookie 在身份认证中的作用"></a>Cookie 在身份认证中的作用</h4><p>客户端第一次请求服务器的时候，服务器通过响应头的形式，向客户端发送一个身份认证的 Cookie，客户端会自动将 Cookie 保存在浏览器中。<br>随后，当客户端浏览器每次请求服务器的时候，浏览器会自动将身份认证相关的 Cookie，通过请求头的形式发送给服务器，服务器即可验明客户端的身份。</p><h4 id="Cookie-不具有安全性"><a href="#Cookie-不具有安全性" class="headerlink" title="Cookie 不具有安全性"></a>Cookie 不具有安全性</h4><p>由于 Cookie 是存储在浏览器中的，而且浏览器也提供了读写 Cookie 的 API，因此 Cookie 很容易被伪造，不具有安全性。因此不建议服务器将重要的隐私数据，通过 Cookie 的形式发送给浏览器。</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Node.js 第三方包</title>
     <link href="/2021/02/26/Node.js%E7%AC%AC%E4%B8%89%E6%96%B9%E5%8C%85/"/>
     <url>/2021/02/26/Node.js%E7%AC%AC%E4%B8%89%E6%96%B9%E5%8C%85/</url>
     
