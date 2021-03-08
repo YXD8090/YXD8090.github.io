@@ -181,6 +181,49 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
+        <a href="/2021/03/08/vue%20%E5%9F%BA%E7%A1%80%E7%AC%AC%E4%B8%80%E5%A4%A9/">Vue 基础</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/03/08/vue%20%E5%9F%BA%E7%A1%80%E7%AC%AC%E4%B8%80%E5%A4%A9/">
+          
+          
+            
+          
+          Vue 介绍Vue 是一套用于构建用户界面的渐进式框架
+特点：易用，灵活，高效
+兼容性：IE8 以上
+
+使用 Vue1. 引入 Vue.js 文件
+2. 创建 节点 标签
+3. 创建 Vue 实例对象(el：挂载节点的选择器, data：所有模板中使用的数据 )
+4. 使用 Vue 实例对象中的数据(&#123;&#123;变量名/表达式&#125;&#125;)
+
+MVVMM：model ( d
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-03-08 19:20" pubdate>
+              2021-03-08
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
         <a href="/2021/02/27/%E8%AE%A4%E8%AF%81%E6%96%B9%E6%A1%88/">认证方案</a>
       </h1>
 
@@ -538,42 +581,19 @@ DOM文本对象模型文本对象模型是w3c组织推荐的处理可扩展标�
     </article>
   </div>
 
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/01/28/hello-world/">Hello World</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/01/28/hello-world/">
-          
-          
-            
-          
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-01-28 19:16" pubdate>
-              2021-01-28
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
 
 
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+  
+  <script>
+    for (ele of document.getElementById("pagination").getElementsByTagName("a")) {
+      ele.href += '#board';
+    }
+  </script>
 
 
 
